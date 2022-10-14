@@ -3,7 +3,7 @@ Repository that contains meisterveda personal config files. For windows, linux a
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
-![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+![Screenshot of my shell prompt](https://raw.githubusercontent.com/meisterveda/dotfiles/main/images/zsh.png)
 
 
 ## Installation
