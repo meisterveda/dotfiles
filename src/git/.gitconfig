@@ -31,13 +31,13 @@
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
 
-	# User
+	# Use Vs Code as editor
+	editor = code --wait
+
+[user]
 	# Name and Github Email
 	name = Gustavo Cabezal
 	email = 40568482+meisterveda@users.noreply.github.com
-
-	# Use Vs Code as editor
-	editor = code --wait
 
 [color]
 
