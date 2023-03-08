@@ -16,3 +16,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DOTFILES_FCE56 }}'
           projectId: dotfiles-fce56
+          entrypoint: documentation
