@@ -1,0 +1,39 @@
+[user]
+    name = meisterveda
+    email = gustavo@meisterveda.com
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    autoSetupRemote = true
+
+[core]
+    editor = nvim
+    pager = delta
+    excludesfile = ~/.gitignore_global
+
+[diff]
+    colorMoved = default
+
+[merge]
+    conflictstyle = diff3
+
+[delta]
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    last = log -1 HEAD
+    unstage = reset HEAD --
+    amend = commit --amend --no-edit
+    wip = !git add -A && git commit -m 'chore: wip'

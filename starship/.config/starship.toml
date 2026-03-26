@@ -1,0 +1,49 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$kubernetes\
+$nodejs\
+$rust\
+$golang\
+$python\
+$cmd_duration\
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+format = "[$branch]($style) "
+style = "purple"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+
+[kubernetes]
+disabled = false
+format = '[$context](cyan) '
+detect_files = ['k8s']
+
+[nodejs]
+format = "[$version](green) "
+detect_files = ["package.json"]
+
+[rust]
+format = "[$version](red) "
+
+[golang]
+format = "[$version](cyan) "
+
+[python]
+format = "[$version](yellow) "
+
+[cmd_duration]
+min_time = 2_000
+format = "[$duration](yellow) "

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+echo "=== Homelab Status ==="
+echo ""
+echo "Nodes:"
+kubectl get nodes -o wide 2>/dev/null || echo "  kubectl not configured"
+echo ""
+echo "Pods (not running):"
+kubectl get pods -A --field-selector 'status.phase!=Running,status.phase!=Succeeded' 2>/dev/null || echo "  none"
+echo ""
+echo "Vault:"
+kubectl exec -n vault vault-0 -- vault status 2>/dev/null | grep -E "Sealed|Version" || echo "  unreachable"
